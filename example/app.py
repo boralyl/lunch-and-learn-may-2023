@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException, Query
 from sqlmodel import select
 
-from .db import create_db_and_tables, engine, Session, get_session
+from .db import create_db_and_tables, Session, get_session
 from .models.hero import Hero, HeroCreate, HeroRead
 
 
