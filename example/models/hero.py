@@ -16,5 +16,5 @@ class HeroCreate(HeroBase):
 
 
 class HeroRead(HeroBase):
-    """Hero GET request model."""
+    """Hero GET response model."""
     id: int
