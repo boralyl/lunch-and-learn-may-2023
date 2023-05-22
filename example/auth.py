@@ -9,4 +9,4 @@ def require_api_key(
     api_key: str = Depends(api_key_header)
 ) -> None:
     if api_key != "super-secret-api-key":
-        raise HTTPException(status_code=401)
+        raise HTTPException(status_code=403)
